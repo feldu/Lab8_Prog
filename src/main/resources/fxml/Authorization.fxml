@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane focusTraversable="true" maxHeight="320.0" maxWidth="260.0" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="320.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab8.Controllers.AuthorisationController">
+    <MenuBar prefHeight="25.0" prefWidth="260.0">
+        <Menu fx:id="selectLanguage" mnemonicParsing="false" text="Выбрать язык">
+            <MenuItem mnemonicParsing="false" onAction="#switchRussian" text="Русский"/>
+            <MenuItem mnemonicParsing="false" onAction="#switchNorwegian" text="Norsk"/>
+            <MenuItem mnemonicParsing="false" onAction="#switchHungarian" text="Magyar"/>
+            <MenuItem mnemonicParsing="false" onAction="#switchSpanish" text="Español"/>
+        </Menu>
+    </MenuBar>
+    <Label fx:id="userName" layoutX="45.0" layoutY="45.0" text="Имя пользователя:"/>
+    <TextField fx:id="usernameField" layoutX="45.0" layoutY="62.0" prefHeight="25.0" prefWidth="170.0"/>
+    <Label fx:id="password" layoutX="45.0" layoutY="110.0" text="Пароль:"/>
+    <PasswordField fx:id="passwordField" layoutX="45.0" layoutY="127.0" prefHeight="25.0" prefWidth="170.0"/>
+    <Button fx:id="loginButton" layoutX="45.0" layoutY="230.0" mnemonicParsing="false"
+            onMouseClicked="#loginButtonClick" prefHeight="25.0" prefWidth="170.0" text="Вход"/>
+    <Button fx:id="registerButton" layoutX="45.0" layoutY="270.0" mnemonicParsing="false"
+            onMouseClicked="#registerButtonClick" prefHeight="25.0" prefWidth="170.0" text="Регистрация"/>
+
+</AnchorPane>
